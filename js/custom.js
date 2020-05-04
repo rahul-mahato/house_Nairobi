@@ -61,7 +61,8 @@ $('#hero-carousel').owlCarousel({
     autoplay: true,
     responsiveClass:true,
     dots:true,
-    smartSpeed: 1000,
+    smartSpeed: 1500,
+    slideSpeed:1500
   })
   
 
