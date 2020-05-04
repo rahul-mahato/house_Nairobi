@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>House Nairobi </title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="icon" href="./favicon.ico" type="image/png">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+
+<!-- At the end of <body>, after jQuery and the Bootstrap js -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- PRE LOADER -->
+
+    <section
+      id="video-overlay"
+      style="
+        background-color: #fff;
+        
+        
+        height: 100vh;
+        width: 100%;
+        z-index: 9999;
+        padding-top: 10px;
+        position: sticky;
+        top: 0;
+      "
+      class="animated"
+    >
+      <div style="z-index: 99999;" class="text-center mt-0  mx-auto">
+        <h1>Please Watch this video till the end to continue</h1>        
+        <button  class="btn btn-secondary " onclick="skipVid()">Skip Video</button>
+      </div>
+      <div style="max-height: 75vh;width: 100%; display: flex; justify-content: center; margin-top: 20px;">
+
+        <video
+        style="max-width: 100%; max-height: 90vh;"
+        id="intro-video"
+        class="col-12"
+        controls
+        autoplay
+        >
+        <source src="./video/FINAL.mp4" type="video/mp4" />
+        
+      </video>
+    </div>
+      <script>
+        let video = document.querySelector("#intro-video");
+
+        skipVid = ()=>{
+          video.pause()
+          document.getElementById("video-overlay").classList.add("fadeOutUp");
+          setTimeout(() => {
+            document.getElementById("video-overlay").style.display="none"
+          }, 400);
+        }
+
+        setInterval(() => {
+          // console.log(video.ended);
+          if (video.ended) {
+            console.log(document.getElementById("video-overlay").classList);
+           skipVid()
+          }
+        }, 300);
+      </script>
+    </section>
+
+    <section class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+
+          <!-- lOGO TEXT HERE -->
+          <a href="index.html" class="navbar-brand"
+            >Nairobi <span>.</span>HRC</a
+          >
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav ml-auto navbar-nav-first">
+            <li><a href="#home" class="smoothScroll">Homes</a></li>
+            <li><a href="#about" class="smoothScroll">About</a></li>
+            <li><a href="#team" class="smoothScroll">Team(Nairobi)</a></li>
+            <li><a href="#what-interns-say" class="smoothScroll">Blog</a></li>
+            <li><a href="#menu" class="smoothScroll">Memes</a></li>
+            <li><a href="#lifeHrc" class="smoothScroll">Life at HRC</a></li>
+          </ul>
+
+          <!-- <ul class="nav navbar-nav navbar-right"> -->
+            <!--
+              <li>
+              <a href="#">Call Now! <i class="fa fa-phone"></i> 010 020 0340</a>
+            </li>
+           -->
+            <!-- <a href="#footer" class="section-btn">Reserve a table</a> -->
+          <!-- </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+      <div class="row">
+        <div class="owl-carousel owl-theme" id="hero-carousel">
+          <div class="item   item-fourth">
+            <div  style="height: 80vh;display: flex;justify-content: center;align-items: center;">
+              <h1>We are Nairobians</h1>
+            </div>
+
+          </div>
+
+          <div class="item item-first">
+            <div class="caption">
+              <div class="container">
+                <div class="col-md-8 col-sm-12">
+                  <img src="./images/highradius.png" style="width: 300px;"/>
+                 
+                  <h1>Get to know us</h1>
+                                       
+                  <a href="#team" class="section-btn btn btn-default smoothScroll">Meet our Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-second">
+            <div class="caption">
+              <div class="container">
+                <div class="col-md-8 col-sm-12">
+                  <h1>Discover Original Memes</h1>
+                                       
+                  <a href="#menu" class="section-btn btn btn-default smoothScroll">Discover Memes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-third">
+            <div class="caption">
+              <div class="container">
+                <div class="col-md-8 col-sm-12">
+                  <h1>Experience at HRC</h1>
+                                        
+                  <a href="#what-interns-say" class="section-btn btn btn-default smoothScroll">Read what the interns say</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-info">
+              <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                <h4>Read our story</h4>
+                <h2>
+                  We've been Making The Best Out of the Resourses We Are
+                  Provided
+                </h2>
+              </div>
+
+              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <p>
+                  House Nairobi in Highway to Highradius-Tech Track,are
+                  enthusiastic, motivated and always active. We usually speak
+                  loud and clear and do our job. We Nairobian, we are
+                  enthusiastic to learn and grow as a team. We motivate each
+                  other and are active participants of this program.Call it
+                  passionate or punctuation.Be it quizzes or assignments we are
+                  always on time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="skill-thumb">
+              <div
+                class="wow fadeInUp section-title color-white"
+                data-wow-delay="1.2s"
+              >
+                <h2>How to identify a Nairobian?</h2>
+              </div>
+
+              <div class="wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+                <strong>Coding</strong>
+                <span class="color-white pull-right">80%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 80%;"
+                  ></div>
+                </div>
+                <strong>Reading Novels</strong>
+                <span class="color-white pull-right">60%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 60%;"
+                  ></div>
+                </div>
+
+                <strong>Watching Movies</strong>
+                <span class="color-white pull-right">65%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 65%;"
+                  ></div>
+                </div>
+
+                <strong>Gaming</strong>
+                <span class="color-white pull-right">40%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 40%;"
+                  ></div>
+                </div>
+                <strong>Travelling</strong>
+                <span class="color-white pull-right">42%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="42"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 42%;"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+              <h2>Meet Us</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div
+            class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card-mod mx-auto"
+          >
+            <div class="card-body text-center">
+              <img
+                class="profile-img-mod"
+                src="./images/moderator/Debanwesh_Bose.jpg"
+              />
+              <h4 class="card-title">Debanwesh Bose</h4>
+              <p class="card-text lead small text-justify">
+                Machine Learning Enthusiast
+              </p>
+              <h5>House Moderator</h5>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/debanwesh-bose-1813ab160"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="./images/interns/SHWETA SAHA.jpg" />
+              <h4 class="card-title">Shweta Saha</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence and Web Development Enthusiast -->
+                <!-- <br/> -->
+                Always curious to learn cutting edge technologies. Hobbies are:
+                Travelling, Eating, Health Club, Reading etc. Interests :
+                Orating, culinary etc
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/shweta-saha-2161b1181"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Shwetasaha"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SIDDHARTH PANDA.jpeg"
+              />
+              <h4 class="card-title">Siddharth Panda</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Data Science and Web Development Enthusiast <br/> -->
+                "I like to describe myself as a person with a lot of curiosity
+                for anything, be it science, tech ,sociology, anything. Hobbies
+                : guitar, football, big time foodie!"
+              </p>
+              <ul class="social-icon">
+                <li><a href="https://www.linkedin.com/in/siddharth-panda-66241b36/" class="fa fa-linkedin-square"></a></li>
+                <li><a href="https://github.com/Sidray-Infinity" class="fa fa-github"></a></li>
+           </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/Rahul Bordoloi.jpg"
+              />
+              <h4 class="card-title">Rahul Bordoloi</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence | Core Programming | Ethical Hacking -->
+                "Allo! I am Rahul Bordoloi. And I would like to tell you about
+                myself. I am a national level Taekwondo player and also a black
+                belt. Also, I am an esports fanatic gamer for R6s. Apart from
+                this I love travelling, singing and I am a massive fan of Real
+                Madrid"
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rahulbordoloi/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rahulbordoloi"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="./images/interns/rahul mahato.png" />
+              <h4 class="card-title">Rahul Mahato</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Full Stack Developer -->
+                "Usually, I watch movies or playing some games to pass my time.
+                I have no static hobbies as such, but exploring different places
+                is something that always intrigues me."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/rahul-mahato/"
+                    target="_blank"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/rahul-mahato"
+                    target="_blank"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="./images/interns/ROLI VERMA.jpg" />
+              <h4 class="card-title">Roli Verma</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Developer -->
+                "All good things interest me! Apart from being a coder and
+                problem solver I am a great orator and dancer and the worst
+                singer you will ever meet. "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/roli-verma-689978188"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RoliVerma"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/AAKAR BHARDWAJ.jpg"
+              />
+              <h4 class="card-title">Aakar Bhardwaj</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Development, Core Programming -->
+                "I am quite inquisitive having a quest for knowledge and I
+                always work with a smile on the face. My hobbies are playing
+                percussion instruments and cricket."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/aakar-bhardwaj-491889194"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+
+        
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/Tanusri.jpg" />
+              <h4 class="card-title">Tanusri Saha</h4>
+              <p class="card-text lead small text-justify">
+                "My hobbies include watching series and listening Arijit's Song
+                whenever I get free time. "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="linkedin.com/in/tanusri-saha-273492188"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https:/github.com/Tanusri98"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/KUSHAGRA ANAND.jpg"
+              />
+              <h4 class="card-title">Kushagra Anand</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence and Programming Enthusiast -->
+                "I am a full time gamer and exploring the world of Computer
+                Vision."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="linkedin.com/in/kushagra-anand-227510161"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/Rishu Singh.jpg" />
+              <h4 class="card-title">Rishu Singh</h4>
+              <p class="card-text lead small text-justify">
+                I am an organised and responsible person and my hobbies and
+                interests include writing,music,and reading.
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/SURYANARAYAN RATH.jpg"
+              />
+              <h4 class="card-title">Suryanarayan Rath</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Core Programming, Augmented Reality -->
+                A bit enthusiast towards JAVA. Specialized in Web-Development in
+                JAVA and Node.JS
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/suryanarayan-rath-13trv/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/surya-trv-13"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/Naman Prabhakar.jpg"
+              />
+              <h4 class="card-title">Naman Prabhakar</h4>
+              <p class="card-text lead small text-justify">
+                "I like to read a lot. I also like to cook. Apart from these I
+                like sports, indoor as well as outdoor. I like to play chess,
+                Badminton, Football. In my free time these days I am solving
+                didi ki puzzles and play ludo. Past few days I am also enjoying
+                coding in Option for the Highradius internship."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/KM SAKSHI VERMA.jpeg"
+              />
+              <h4 class="card-title">Sakshi Verma</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Data Science and Web Development -->
+                "I have a variety of hobbies like singing, dancing , poem and
+                content writing.I am a machine learning enthusiast also into
+                research projects. Apart from these I also play chess , do
+                volunteer work and community activities. I volunteer a couple of
+                hours per week at a social services organization and teach
+                underprivileged children. "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/sakshi-verma08/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Sakshi0810/"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/PRATEEK TIWARY.jpg"
+              />
+              <h4 class="card-title">Prateek Tiwary</h4>
+              <p class="card-text lead small text-justify">
+                "My name is Prateek Tiwary and I belong to Ranchi, Jharkhand.
+                I'm pursuing B.Tech in Electronics and Telecommunication
+                Engineering from KIIT University. I like playing guitar and I
+                also enjoy to play video games in my leisure time."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+
+   
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/AYUSH AGRAWAL.jpg" />
+              <h4 class="card-title">Ayush Agarwal</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                I am a foodie and an otaku. I barely take anything seriously but
+                when I do then I try to give it my all. I like being humourous
+                even am not good at it XD.
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ayush-agrawal-3698a9151/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Ayush-Agrawal-2609"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="images/interns/SURYANARAYAN RATH.jpg"
+              />
+              <h4 class="card-title">Suryanarayan Rath</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Core Programming, Augmented Reality -->
+                A bit enthusiast towards JAVA. Specialized in Web-Development in
+                JAVA and Node.JS
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/suryanarayan-rath-13trv/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/surya-trv-13"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/VANDANA MALL.jpg" />
+              <h4 class="card-title">Vandana Mall</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Development, IOT, Core Programming -->
+                A friendly nature & not getting flustered easily with unexpected
+                challenges with an interest to learn new technologies & imply
+                practically & painting is my hobby.
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/vandana-mall-25941716a"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/CHIRAYATA CHATTERJI.jpg"
+              />
+              <h4 class="card-title">Chirayata Chatterji</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Core Programming -->
+                Sketching, doodling, reading and writing suspense and horror
+                stories
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/AAYUSH SAHAY.jpg" />
+              <h4 class="card-title">Aayush Sahay</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Development -->
+                "I am a CSE student from KIIT who has got an internship into
+                high radius. I like getting my hands dirty on coding. My hobbies
+                are playing Chess and Badminton."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li>
+                  <a
+                    href="https://github.com/theashggl"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SYED MOHAMMAD SARIM.jpg"
+              />
+              <h4 class="card-title">Syed Mohammad Sarim</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Core Programming -->
+                "I am pearson who likes to have a lot friends around me though
+                my shyness can be misleading at times. I love football and I am
+                an absolute fan of Ghibli movies. "
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/HITESH BARIK.jpg"
+              />
+              <h4 class="card-title">Hitesh Barik</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Cloud Computing -->
+                "I enjoy reading articles about politics, defense, technology,
+                and self-development, and one of my interests would be writing
+                about new technologies and political economy."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/hitesh-barik-234256142/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SOURAV RANJAN MISHRA.jpg"
+              />
+              <h4 class="card-title">Sourav Ranjan Mishra</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Core Programming -->
+                "Hello Myself Sourav Ranjan Mishra. About my hobbies:- Reading
+                novels(specially thriller genre), playing video games."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/ANKITA ADHIKARY.jpg"
+              />
+              <h4 class="card-title">Ankita Adhikary</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Artificial Intelligence, Android Development,
+                Core Programming -->
+                "I am a fun loving person whose interest lies in painting and I
+                have done Diploma in Classical Kathak Nritya. "
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/AAKASH MOHTA.jpg"
+              />
+              <h4 class="card-title">Aakash Mohta</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Android Development, Core Programming, Cloud
+                Computing -->
+                "First of all I would like to state that I love swimming. Having
+                said that, I also like playing volleyball and chess and yes I
+                love coding too. I also like watching horror movies and series."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/aakash-mohta-16a53a167"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/PRAGYA CHAUDHARY.jpg"
+              />
+              <h4 class="card-title">Pragya Chaudhary</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "I'm a passionate reader. Leave me in a room full of novels and
+                I shall happily spend the rest of my life in there! Full time
+                dreamer, I believe in magic and unicorns and fairytales. Biggest
+                aim in life is to grow as a person everyday and live to the
+                fullest. I'm passionate about my work as well."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="images/interns/RITAM BARIK.jpg" />
+              <h4 class="card-title">Ritam Barik</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "I like competitive coding hence try to take part in global
+                coding competitions like hash code etc. Apart from this my hobby
+                is Story Book Reading and travelling."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/ritam-barik-557905195/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/RITAM-BARIK"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/RITESH MISHRA.jpg"
+              />
+              <h4 class="card-title">Ritesh Mishra</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "Reading books and doing courses to enhance my skills."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/riteshmishra478"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a href="github.com/mishraritesh" class="fa fa-github"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SHRUTI KESHRI.jpg"
+              />
+              <h4 class="card-title">Shruti Keshri</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Development, Core Programming, IoT -->
+                "I am someone who loves nature with a keen interest for thriller
+                movies/series. One of my hobbies is painting."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/shruti-keshri-581aa9159/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SIDDHARTHA MAITRA.jpg"
+              />
+              <h4 class="card-title">Siddhartha Maitra</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Android Development -->
+                "I love fast bowling in cricket. following cricket, following
+                defense,aviation,politics and other social issues Mananging
+                teams. Being another one of the primary interest/hobby of mine
+                .. working for underprevildged children and society in general
+                is something i am extremely passionate about "
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SAMBARTA CHAKRABORTY.jpg"
+              />
+              <h4 class="card-title">Sambarta Chakraborty</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Cloud Computing -->
+                Hi I am Sambarta of House Nairobi. Introvert. Spend most of my
+                time resting.
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SHIVANGI M ADESHARA.jpeg"
+              />
+              <h4 class="card-title">Shivangi Adeshara</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Core Programming -->
+                "I am always ready for any sports fun be it Football or
+                Volleyball. I like to keep myself fit through running,cycling or
+                swimming.I love Travelling and exploring a new place.I also like
+                being socially active. I have always being attracted towards the
+                concept of Artificial Intelligence and I am actually looking
+                forward to work in this field."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/JAYAT RATERIA.jpg"
+              />
+              <h4 class="card-title">Jayat Rateria</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Artificial Intelligence, Core Programming -->
+                "Hi! I am Jayat Rateria. I am a Visionary and Motivated person .
+                I'm not comfortable with settling and always onto something
+                productive. I prefer playing Guitar in my leisure time and like
+                playing sports like Lawn Tennis and Squash. I have recently also
+                developed a knack for coding and developing websites."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="www.linkedin.com/in/jayat-rateria-858938182"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/JAYAT-24"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/NISHTHA JAISWAL.jpg"
+              />
+              <h4 class="card-title">Nishtha Jaiswal</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "I'm a data science enthusiast and love to sing and read
+                articles as a part of my hobbies "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/nishtha-jaiswal-31a992192/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https:/github.com/Nishtha-Jaiswal"
+                    class="fa fa-github"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/RITWICK BANERJEE.jpg"
+              />
+              <h4 class="card-title">Ritwick Banerjee</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Content Writing -->
+                "I am Ritwick, currently undergoing a training camp at
+                HighRadius, Apart from my keen interest in Artificial
+                Intelligence, I like to read, and indulge myself in leisure
+                writing. I have a unending longing of music as well. "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ritwickbanerjee99/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SHIVANI SINGH.jpg"
+              />
+              <h4 class="card-title">Shivani Singh</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development -->
+                "I am a fun loving, jolly person with a chill attitude 😁
+                Sketching, watching movies and cooking are my hobbies"
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/VARTIKA DUBEY.jpg"
+              />
+              <h4 class="card-title">Vartika Dubey</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Cyber Security -->
+                "I am eager to learn, determined. I never give up until I get
+                something right. I get on well with all kinds of people.I look
+                forward to keep a positive attitude. Hard work doesn't bother
+                me. I enjoy facing challenges. As far as my hobbies are
+                concerned i like to sing, listen to music, help people, swimming
+                and basketball"
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/SOUMYAJIT DEY.jpg"
+              />
+              <h4 class="card-title">Soumyajit Dey</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "I like to describe myself as a person with a lot of curiosity
+                for anything, maybe that's the reason why I choose to be a data
+                scientist. About my hobbies I like to draw, watch TV shows and
+                play games, especially games as it me a chance to interact with
+                new people while having fun."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/VISHAL KUMAR.jpg"
+              />
+              <h4 class="card-title">Vishal Kumar</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming, Cloud Computing -->
+                "I want to learn more , earn more , know more and keep striving
+                towards my goal. My hobbies are: To cook , to write shaayri ,
+                play football , volleyball and basketball. I love to read novels
+                and self development books .. in simple words books are love for
+                me and also I love to listen lo-fi music and code which goes
+                hand in hand . "
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/vishal-kumar-31412b167"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/Anand Maurya.jpg"
+              />
+              <h4 class="card-title">Anand Maurya</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Android Development -->
+                "Intrested in developing multiplatform application. Intrest in
+                politics and Cricket. passionate about coding."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="https:/www.linkedin.com/in/anand-maurya-6073a0135/"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a href="https:/github.com/an-and10" class="fa fa-github"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img class="profile-img" src="./images/interns/NIDHI KUMAR.jpg" />
+              <h4 class="card-title">Nidhi Kumari</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Web Development, Android Development, Cloud Computing -->
+                I am Nidhi. I am interested in software development area
+                specifically in designing interfaces. Apart from that, I am a
+                machine learning enthusiast. My hobbies are photography and
+                sports (mainly basketball and badminton). I really love solving
+                sudokus and its a major reason for me indulging in problem
+                solving activities.
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="www.linkedin.com/in/nidhikumar1401"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/RITUPARNA NASKAR.jpg"
+              />
+              <h4 class="card-title">Rituparna Naskar</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Machine Learning Enthusiast -->
+                "I believe in creativity and one of its reflection is my art
+                work. I also love to make new things out of waste(which we call
+                jugaad). I love to sing and it always helps in changing my mood.
+                Apart from that watching movies and "netflix and chill" is most
+                common among all of us. "
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/Rishivansh Patnaik.jpg"
+              />
+              <h4 class="card-title">Rishivansh Patnaik</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Android Development -->
+                "My hobbies include reading novels and listening to music."
+              </p>
+              <ul class="social-icon">
+                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                <li><a href="#" class="fa fa-github"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12 wow fadeInUp profile-card">
+            <div class="card-body text-center">
+              <img
+                class="profile-img"
+                src="./images/interns/KUNAL BIKRAM DUTTA.jpg"
+              />
+              <h4 class="card-title">Kunal Bikram Dutta</h4>
+              <p class="card-text lead small text-justify">
+                <!-- Artificial Intelligence, Core Programming -->
+                "I am very much passionate about quizzing as it helps to appease
+                my curiosity about things going around the World the and to
+                quench the thirst of knowledge​.I have a taste of music for
+                bengali,English and Hindi and equal respect for all the genres
+                .I like to do editing videos mainly meme related funny and also
+                album videos representing a group.Last but not the least FIFA
+                playing with my friends is a great energetic timepass for me.."
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a
+                    href="http://www.linkedin.com/in/kunal-bikram-dutta-1a15aa158"
+                    class="fa fa-linkedin-square"
+                  ></a>
+                </li>
+                <li>
+                  <a href="https:/github.com/KBD10" class="fa fa-github"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU-->
+
+    <section id="what-interns-say" class="row justify-content-center">
+      <div
+        class="col-sm-12 mt-0 wow fadeInUp text-center"
+        data-wow-delay="0.1s"
+      >
+        <h2 class="interns-title">What Interns say about HighRadius</h2>
+      </div>
+      <div class="col-sm-12 mx-auto">
+        <div class="owl-carousel owl-theme" id="testimonials-carousel">
+
+
+
+
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+            So, I would like to state that till now the experience at HighRaduis was quite good as I learned many things in a short span of time.
+             No doubt it was fabulous but yes it was quite tiring.
+             Nonetheless it was a great boost to many of my skills which will further help me in corporate life ahead.
+              </span>
+              <div class="tst-author col-12">
+                <h4>Aakash Mohta</h4>
+
+                <p>1705381</p>
+              </div>
+            </div>
+          </div>
+
+         <!-- 2-->
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+          It was a wonderful experience, as I was given the opportunity to learn new things and implement it shortly in the project,
+           which will play a vital role in enhancing my technical skills, and building my career. The mentor is very co
+           operative and helpful. So far I have been enjoying the process, and am eagerly waiting for the opportunity
+           to work in this company.
+              <div class="tst-author col-12">
+                <h4>Chirayata Chatterji </h4>
+
+                <p>1705779</p>
+              </div>
+            </div>
+          </div>
+
+            <!--3-->
+
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+I like working in High Radius because I am working in the field of my specialization.
+ I am subjected to the experience of corporate lifestyle and I am learning great deal from my moderator.
+ Also, Working with my group members has helped me a lot as we are all growing together.
+ And I like working here as I am accumulating a lot experience and knowledge.
+              <div class="tst-author col-12">
+                <h4>Rahul Bordoloi </h4>
+
+                <p>1705779</p>
+              </div>
+            </div>
+          </div>
+
+         
+            <!-- 4-->
+<!--
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+      The recently concluded week in the highway to Highradius program has been nothing short of a rollercoaster ride. One heck of a rollercoaster indeed! In a true rollercoaster fashion, there have been ups and downs, highs and lows. The high points include the insane amount of productivity and creativity in such a short span of time. Up until now, I wasn't even aware that I had it in me and I gotta say I'm well pleased with myself for managing all of it. The low points include the tight schedules, but it is okay I guess since it is a stepping stone in our way forward into the corporate world. In this past week, I'm sure we've all got a whiff of what it's like out there. The wonderful thing about this week has been the inane productivity and my adrenaline rush was at an all time high! This week has sure prepped me for what lies ahead and I sincerely hope that this journey turns out to be a long one. Thank You!
+              <div class="tst-author col-12">
+                <h4>Pragya Chaudhary </h4>
+
+                <p>1705714</p>
+              </div>
+            </div>
+          </div>
+-->
+            <!-- 5-->
+
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+        High Radius is giving me the experience i never had before.
+        I love working here as I'm able to test my limits and learn so much from my house mates and  our moderator.
+         It has been really knowledgeable for me in different areas.
+         This platform is really helping me to boost up my confidence.
+         Thank you High Radius for this opportunity.
+
+              <div class="tst-author col-12">
+                <h4>Vartika Dubey </h4>
+
+                <p>1728068</p>
+              </div>
+            </div>
+          </div>
+
+           <!--4-->
+
+           <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+             Yeah , I was eager to write this because it was hell like a rollercoaster as they have told us. Although it was a hectic week but I got to learn so many new stuffs and I'm looking forward to keep continue my journey. And also I got to interact with so many new people which is really awesome and hope to make a good relationship with each and everyone out there 😁❤️
+
+              <div class="tst-author col-12">
+                <h4>Vishal Kumar</h4>
+
+                <p>1705379</p>
+              </div>
+            </div>
+          </div>
+
+  <!--13-->
+  <div class="item">
+    <div class="writeup-card row mx-0">
+
+      <span class="text-justify text-center col-12 tst-msg">
+       <span style="display: inline;"
+       ><img
+         src="./images/quotebg.png"
+         width="20px"
+         class="quote-img"
+       />
+     </span>
+    It's been just a week, but I have to say it's been a heck of a roller coaster ride that I have to start by saying that our moderators are amazing and mine is like a big brother that you know is always accessible and helping out whenever I'm lost I never thought I'm going to be able to absorb so much in so little time, but the course is designed to help you learn quickly and efficiently.
+      <div class="tst-author col-12">
+        <h4>Hitesh Barik</h4>
+
+        <p>1706326</p>
+      </div>
+    </div>
+  </div>
+
+            <!-- 6-->
+          <div class="item">
+            <div class="writeup-card row mx-0">
+
+              <span class="text-justify text-center col-12 tst-msg">
+               <span style="display: inline;"
+               ><img
+                 src="./images/quotebg.png"
+                 width="20px"
+                 class="quote-img"
+               />
+             </span>
+        It has been an eyeopener for me..and a major push from my laidback style of working... also looking at the amount of productivity i can manage in a single day ...i am pretty amazed
+              <div class="tst-author col-12">
+                <h4>Siddhartha Maitra</h4>
+
+                <p>1705905</p>
+              </div>
+            </div>
+          </div>
+
+  <!-- 7-->
+  <div class="item">
+    <div class="writeup-card row mx-0">
+
+      <span class="text-justify text-center col-12 tst-msg">
+       <span style="display: inline;"
+       ><img
+         src="./images/quotebg.png"
+         width="20px"
+         class="quote-img"
+       />
+     </span>
+It was great to experience working this hard and gaining much worth knowledge in this short span of time. All possible because of this crash course by Highradius. Thank you HRC, for this great opportunity.
+      <div class="tst-author col-12">
+        <h4>Ritesh Mishra</h4>
+
+        <p>1705437</p>
+      </div>
+    </div>
+  </div>
+
+  <!--8-->
+  <!--
+  <div class="item">
+    <div class="writeup-card row mx-0">
+
+      <span class="text-justify text-center col-12 tst-msg">
+       <span style="display: inline;"
+       ><img
+         src="./images/quotebg.png"
+         width="20px"
+         class="quote-img"
+       />
+     </span>
+       The roller coaster ride of highway to highradius program is a great experience as it will prepare us for the next steps of our life to achieve our dreams.Moreover it doesn't judge us  only on the basis of a one day performance or an interview rather it is giving us opportunity to showcase our capability before joining the company, a really innovative approach. It also helping us to learn how to work under pressure when deadline is near. The moderators and all the higher authority of highradius are encouraging us to cope up with the training that is giving us challenges to give our best performance
+      <div class="tst-author col-12">
+        <h4>Kunal Bikram Dutta</h4>
+
+        <p>1705607</p>
+      </div>
+    </div>
+  </div>
+-->
+  <!--9-->
+  <!--
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   My experience with High Radius so far has been like calculus - not easy but really helpful and interesting. Got an eye opening view of how corporate life is going to be. High Radius made me prepare for the best and worst scenarios I will face in my corporate life. I learnt so much in so little time with the help of the moderators and High Radius team. Their constant support and work assignments helped me not only learn new things but also gave me a direction on how to solve real life problems. It was indeed a roller coaster experience. Roller coasters have always been my favorite ride.
+
+    <div class="tst-author col-12">
+      <h4>Nidhi Kumar</h4>
+
+      <p>1729038</p>
+    </div>
+  </div>
+</div>
+-->
+  <!--10-->
+<!--
+  <div class="item">
+    <div class="writeup-card row mx-0">
+
+      <span class="text-justify text-center col-12 tst-msg">
+       <span style="display: inline;"
+       ><img
+         src="./images/quotebg.png"
+         width="20px"
+         class="quote-img"
+       />
+     </span>
+     "So I was totally surprised by the selection mail and was very excited about the journey ahead.
+ Orientation was good.
+ But the next day was something I never expected.
+ I never learnt so much in such a short period of time and somewhat tired and frustrated due to HRC assignment and college assignment plus the zoom classes after 7 at the same time..
+ Days passed and now I am loving it.
+ I am so amazed how this internship has stretched our limits and gave us a family called Nairobi.
+ A family which is always there..💙"
+      <div class="tst-author col-12">
+        <h4>Shivani Singh</h4>
+
+        <p>1706267</p>
+      </div>
+    </div>
+  </div>
+-->
+  <!--11-->
+
+  <!--12-->
+  <div class="item">
+    <div class="writeup-card row mx-0">
+
+      <span class="text-justify text-center col-12 tst-msg">
+       <span style="display: inline;"
+       ><img
+         src="./images/quotebg.png"
+         width="20px"
+         class="quote-img"
+       />
+     </span>
+    Till now my experience in High Radius has been nothing but amazing. Got involved in many new stuffs starting from making video resume to getting summer internship. It has been a hell of a ride with ups and downs. Looking for for more such adventure with High Radius.
+      <div class="tst-author col-12">
+        <h4>Soumyajit Dey</h4>
+
+        <p>1705275</p>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--14-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   So far my experience with HighRadius has been pretty adventurous. Got to get involved in  new and amazing stuffs, starting from the video resume to the summer internship. Indeed it has been a roller coster ride with lots of ups and downs. Looking forward for more such adventures to come my way.
+
+    <div class="tst-author col-12">
+      <h4>Nishta Jaiswal</h4>
+
+      <p>1705340</p>
+    </div>
+  </div>
+</div>
+
+<!--15-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   It is indeed a great experience.. Got to learn a lot and also adopt to some changes.At the beginning I was complaining about the hectic schedule but now I just enjoy the rola coaster. The journey has just began. I hope High Radius will teach me a lot more lessons in the upcoming days.
+
+    <div class="tst-author col-12">
+      <h4>Rituparna Naskar </h4>
+
+      <p>1705526</p>
+    </div>
+  </div>
+</div>
+
+
+<!--16-->
+<!--
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   Joining HighRadius for this Summer Training was one of the best decisions I made. The experience was amazing. The Highradius team has been guiding us throughout the whole project. I was a little nervous first as I had no prior knowledge of Python, but we were given amazing moderators who are just a text away and they cleared our doubt through zoom meetings and texting. Here I also met a few amazing members of Group Nairobi, who are always enthusiastic and ready to help others. Our group has been doing well and I want all of us to stay united and help each other as we are doing right now. I am completely enjoying this RollerCoaster and want to continue the same for the upcoming weeks
+    <div class="tst-author col-12">
+      <h4>Arkaprava Sain </h4>
+
+      <p>1704417</p>
+    </div>
+  </div>
+</div>-->
+
+<!--17-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   It was a rollercoaster ride with so many new challenges each day. I am glad that I am a part of it. The amount of new techanical things I have learnt in last few days is insane including  skills like time management and teamwork.
+<div class="tst-author col-12">
+      <h4>Rishu Singh </h4>
+
+      <p>1728068</p>
+    </div>
+  </div>
+</div>
+
+<!--18-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   My experience at HighRadius has been quite amazing so far and I am looking forward for more opportunities ahead.
+<div class="tst-author col-12">
+      <h4>Aakar Bhardwaj </h4>
+
+      <p>1705894</p>
+    </div>
+  </div>
+</div>
+
+
+<!--19-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   My experience with HighRadius till now is good...Because here we are learning a lot of things along with doing fun activities.Got to know about many people,a good moderator and helpful friends.
+<div class="tst-author col-12">
+      <h4>Tanusri  Saha </h4>
+
+      <p>1730201</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--20-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   It's been so much fun and I got to know so many new and awesome people. Its been a very precious and fun journey.
+<div class="tst-author col-12">
+      <h4> Naman Prabhakar</h4>
+
+      <p>1728057</p>
+    </div>
+  </div>
+</div>
+
+
+<!--21-->
+
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   My experience with HighRadius is amazing till now and am learning a lot of new things everyday.
+<div class="tst-author col-12">
+      <h4> Ritam Barik</h4>
+
+      <p>1706254</p>
+    </div>
+  </div>
+</div>
+
+
+<!--22-->
+
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   Amazing man...Like never thought that I would get accustomed so early with this working culture of theirs...
+<div class="tst-author col-12">
+      <h4>Ankita Adhikary </h4>
+
+      <p>1729251</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--23-->
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   This is the best leaning experience I have ever had. I am glad to be a part of this.
+<div class="tst-author col-12">
+      <h4>Shruti Keshri </h4>
+
+      <p>1705922</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--24-->
+
+<div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   It is a roller-coaster ride till now but I am enjoying it and really excited to get the corporate touch and to learn new things.
+<div class="tst-author col-12">
+      <h4>Ishita Kundu</h4>
+
+      <p>1704267</p>
+    </div>
+  </div>
+</div>
+
+
+<!--25-->
+<!-- <div class="item">
+  <div class="writeup-card row mx-0">
+
+    <span class="text-justify text-center col-12 tst-msg">
+     <span style="display: inline;"
+     ><img
+       src="./images/quotebg.png"
+       width="20px"
+       class="quote-img"
+     />
+   </span>
+   A fun challenge
+<div class="tst-author col-12">
+      <h4>Roli Verma </h4>
+
+      <p>1705530</p>
+
+    </div>
+  </div>
+</div> -->
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Menu -->
+
+    <section id="menu" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row justify-content-center m-0">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+              <h2>Memes speak louder than words</h2>
+              <h4>Nairobians</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0061.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0061.jpg"
+                  class="img-responsive"
+                  alt=""
+                  style="height: 350px;"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0062.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0062.jpg"
+                  class="img-responsive"
+                  alt=""
+                  style="height: 350px;"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0063.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0063.jpg"
+                  class="img-responsive"
+                  alt=""
+                  style="height: 350px;"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0060.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0060.jpg"
+                  class="img-responsive meme-img"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0064.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0064.jpg"
+                  class="img-responsive meme-img"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0065.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0065.jpg"
+                  class="img-responsive meme-img"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0066.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0066.jpg"
+                  class="img-responsive meme-img"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <!-- MENU THUMB -->
+            <div class="menu-thumb">
+              <a
+                href="./images/IMG-20200503-WA0067.jpg"
+                class="image-popup"
+                
+              >
+                <img
+                  src="./images/IMG-20200503-WA0067.jpg"
+                  class="img-responsive meme-img"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <!-- <section id="testimonial" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+              <h2>Testimonials</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-10">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  <p>
+                    Integer posuere erat a ante venenatis dapibus posuere velit
+                    aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                    non.
+                  </p>
+                  <div class="tst-author">
+                    <h4>Digital Carlson</h4>
+                    <br />
+                    <span>Pharetra quam sit amet</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <p>
+                  Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                  non.
+                </p>
+                <div class="tst-author">
+                  <h4>Digital Carlson</h4>
+                  <br />
+                  <span>Pharetra quam sit amet</span>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                  non.
+                </p>
+                <div class="tst-author">
+                  <h4>Digital Carlson</h4>
+                  <br />
+                  <span>Pharetra quam sit amet</span>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                  non.
+                </p>
+                <div class="tst-author">
+                  <h4>Digital Carlson</h4>
+                  <br />
+                  <span>Pharetra quam sit amet</span>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                  non.
+                </p>
+                <div class="tst-author">
+                  <h4>Digital Carlson</h4>
+                  <br />
+                  <span>Pharetra quam sit amet</span>
+                </div>
+              </div>
+              <div class="item">
+                <p>
+                  Integer posuere erat a ante venenatis dapibus posuere velit
+                  aliquet. Maecenas faucibus mollis interdum ullamcorper nulla
+                  non.
+                </p>
+                <div class="tst-author">
+                  <h4>Digital Carlson</h4>
+                  <br />
+                  <span>Pharetra quam sit amet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    
+    <section id="lifeHrc" data-stellar-background-ratio="0.5">
+  <div class="container text-center ">
+
+    <h1>Here's some glimpses from out sessions and meetings</h1>
+    <div class="row mt-2">
+    >
+  
+  
+  <div class="wow fadeInUp  col-sm-12" data-wow-delay="0.4s">
+    <div class="">
+      <img src="./images/Nairobi1.jpg" width="100%" style="max-height: 600px;">
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+      
+    </section>
+
+
+    <section class="thanks">
+      <div class="container">
+
+        
+        
+        <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="">
+            
+            <h1 class="wow fadeInUp "  data-wow-delay="0.2s">Thanking Note</h1>
+            
+            
+            
+            
+            <p class="font-weight-normal lead"> Every sun rise determines the goal of our day. We have to work together out of the box to make our tasks done at the end of day here at HRC.
+              Developing new skills every passing day is our daily routine, we all thank our moderator - Debanwesh to make this journey seem lighter and easier.
+              Thanks!
+            </p>
+            <p class="blockquote-footer"> Nairobians</p>
+            
+            
+          </div>
+          
+        </div>
+        <div class="col-md-6 col-sm-12 text-right">
+          <img src="./images/meeting.jpg" style="height: 400px; max-width: 100%;" />
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- FOOTER -->
+    <!-- <footer id="footer" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-8">
+            <div class="footer-info">
+              <div class="section-title">
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+              </div>
+              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                <p>
+                  123 nulla a cursus rhoncus,<br />
+                  augue sem viverra 10870<br />id ultricies sapien
+                </p>
+              </address>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-8">
+            <div class="footer-info">
+              <div class="section-title">
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">Reservation</h2>
+              </div>
+              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                <p>090-080-0650 | 090-070-0430</p>
+                <p><a href="mailto:info@company.com">info@company.com</a></p>
+                <p>LINE: eatery247</p>
+              </address>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-8">
+            <div class="footer-info footer-open-hour">
+              <div class="section-title">
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">Open Hours</h2>
+              </div>
+              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <p>Monday: Closed</p>
+                <div>
+                  <strong>Tuesday to Friday</strong>
+                  <p>7:00 AM - 9:00 PM</p>
+                </div>
+                <div>
+                  <strong>Saturday - Sunday</strong>
+                  <p>11:00 AM - 10:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-2 col-sm-4">
+            <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+              <li>
+                <a
+                href="#"
+                class="fa fa-facebook-square"
+                attr="facebook icon"
+                ></a>
+              </li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-google"></a></li>
+            </ul>
+            
+            <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+              <p>
+                <br />Copyright &copy; 2018 <br />Your Company Name
+                
+                <br /><br />Design:
+                <a rel="nofollow" href="http://templatemo.com" target="_parent"
+                >TemplateMo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  </html>
