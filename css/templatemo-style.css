@@ -414,9 +414,23 @@ section {
 }
 .slider .item-fourth {
   background-image: linear-gradient(rgba(78, 36, 0, 0.24),rgba(54, 25, 0, 0.356)), url(../images/fun.jpg);
-  background-position: right !important;
+  background-position: center !important;
   
 }
+
+
+@media screen and (max-width: 786px) {
+  .slider .item-fourth {
+    background-image: linear-gradient(
+        rgba(36, 17, 1, 0.589),
+        rgba(54, 25, 0, 0.759)
+      ),
+      url(../images/fun.jpg);
+    background-position: right !important;
+  }
+}
+
+
 .slider .item-fourth h1{
   font-size: 80px;
 }
