@@ -414,7 +414,7 @@ section {
 }
 .slider .item-fourth {
   background-image: linear-gradient(rgba(78, 36, 0, 0.24),rgba(54, 25, 0, 0.356)), url(../images/fun.jpg);
-  background-position: center !important;
+  background-position: right !important;
   
 }
 .slider .item-fourth h1{
