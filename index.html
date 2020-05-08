@@ -79,7 +79,9 @@
           video.pause()
           document.getElementById("video-overlay").classList.add("fadeOutUp");
           setTimeout(() => { 
+            document.getElementById("video-overlay").style.display = "none"
             document.getElementById("video-overlay").innerHTML=""
+            
           }, 400);
         }
 
